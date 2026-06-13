@@ -19,7 +19,7 @@ const projectSchema = new mongoose.Schema(
         mimetype: String,
         size: Number,
         path: String,
-        url: String,  // Cloudinary secure_url
+        url: String,  
       },
     ],
     createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },

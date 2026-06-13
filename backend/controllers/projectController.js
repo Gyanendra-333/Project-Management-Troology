@@ -12,7 +12,6 @@ export const getProjects = async (req, res) => {
     if (status) query.status = status;
 
     if (req.user.role === 'user') {
-      // query.assignedUsers = req.user._id;
       query.assignedUsers = { $in: [new mongoose.Types.ObjectId(req.user._id)] };
     }
 
@@ -50,8 +49,8 @@ const mapFiles = (files) =>
     originalName: f.originalname,
     mimetype: f.mimetype,
     size: f.size,
-    path: f.path || f.secure_url || '',   // Cloudinary gives secure_url via path field
-    url: f.secure_url || f.path || '',    // explicit url field for frontend use
+    path: f.path || f.secure_url || '',  
+    url: f.secure_url || f.path || '',   
   }));
 
 // Admin: Create project
