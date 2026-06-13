@@ -1,10 +1,10 @@
-# 🚀 ProjectHub — Advanced MERN Project Management System
+#  ProjectHub — Advanced MERN Project Management System
 
 A production-style full-stack application built with the MERN stack featuring JWT auth, role-based access, real-time notifications, file uploads, activity logs, and a clean Tailwind UI with dark mode.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 project-management/
@@ -14,7 +14,7 @@ project-management/
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Core
 
@@ -37,7 +37,7 @@ project-management/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer       | Tech                                                                    |
 | ----------- | ----------------------------------------------------------------------- |
@@ -99,7 +99,7 @@ Since only Admins can create users, register via `/register` first, then manuall
 ```bash
 mongosh
 use project_management
-db.users.updateOne({ email: "your@email.com" }, { $set: { role: "admin" } })
+db.users.updateOne({ email: "gyan@gmail.com" }, { $set: { role: "admin" } })
 ```
 
 Or use this seed script:
@@ -120,7 +120,7 @@ mongoose.connect(process.env.MONGO_URI).then(async () => {
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Auth
 
@@ -165,7 +165,7 @@ mongoose.connect(process.env.MONGO_URI).then(async () => {
 
 ---
 
-## 🔌 Socket.io Events
+##  Socket.io Events
 
 | Event          | Direction       | Payload                        |
 | -------------- | --------------- | ------------------------------ |
@@ -193,7 +193,7 @@ Notification types: `project_created`, `project_updated`, `project_deleted`, `pr
 
 ---
 
-## 📊 Evaluation Criteria Coverage
+##  Evaluation Criteria Coverage
 
 | Criteria                        | Implementation                              |
 | ------------------------------- | ------------------------------------------- |
